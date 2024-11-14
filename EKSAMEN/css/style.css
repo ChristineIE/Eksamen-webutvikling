@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(226, 211, 217);
+    background-color: rgb(235, 231, 223);
     margin: 0 auto;
     max-width: 1200px;
     
@@ -48,7 +48,7 @@ header{
     margin: 5px;
 }
 
-#main-logo{
+.main-logo{
     font-size: 2rem;
     font-weight: bold;
 }
@@ -212,12 +212,12 @@ header nav ul li a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
 }
 
 #review-card-flex h2{
     flex-basis: 100%;
     width: 100%;
+    text-align: center;
 }
 .review-card{
     border: 1px solid rgb(194, 191, 191);
@@ -231,6 +231,62 @@ header nav ul li a{
     max-width: 80px;
     border-radius: 50px;
 }
+
+footer .main-logo{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+footer h3{
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+footer p{
+    padding: 10px;
+}
+
+footer ul{
+    padding: 10px;
+}
+
+.contact-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list-elements-span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contact-list a{
+    text-decoration: none;
+}
+
+#footer-nav-section ul{
+    padding: 0;
+}
+
+#footer-nav-section li{
+    list-style: none;
+    padding: 10px;
+    }
+
+#footer-nav-section li a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer-social a{
+    color: black;
+    padding: 10px;
+}
+
 
 @media only screen and (min-width: 450px) and (max-width: 850px){
 
