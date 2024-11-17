@@ -51,13 +51,86 @@
                 <li>Produktnavn</li>
             </ul>
         </nav>
-        <section id="products-grid">
-            <img src="ressurser/produktbilde.jpg" alt="" id="pic-1">
-            <img src="ressurser/produktbilde.jpg" alt="" id="pic-2">
-            <img src="ressurser/produktbilde.jpg" alt="" id="pic-3">
-            <img src="ressurser/produktbilde.jpg" alt="" id="pic-4">
-        </section>
-
+        <div id="flex-container-product">
+            <section id="product-photos-grid">
+                <img src="ressurser/produktbilde.jpg" alt="" id="pic-1">
+                <img src="ressurser/produktbilde.jpg" alt="" id="pic-2">
+                <img src="ressurser/produktbilde.jpg" alt="" id="pic-3">
+                <img src="ressurser/produktbilde.jpg" alt="" id="pic-4">
+            </section>
+            <section>
+                <h4>Produktnavn</h4>
+                <a href="#">Merkenavn</a>
+                <form id="add-products-form">
+                    <label>
+                        <select name="size" required>
+                            <option value="#">Velg størrelse</option>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </label>
+                    <label class="add-to-chart-label">
+                        <input type="text" placeholder="Legg i handlekurv">
+                    </label>
+                    <label class="add-to-chart-label">
+                        <input type="submit" value="">
+                        <i class="fa-regular fa-heart"></i>
+                    </label>
+                </form>
+            </section>
+        </div>
+        <aside>
+            <a href="#">Se flere lignende produkter </a>
+            <i class="fa-solid fa-arrow-right"></i>
+            <article class="product-card">
+                <img src="https://picsum.photos/200" alt="bilde av produktet">
+                <h4>Produktnavn</h4>
+                <p>499 kr</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>50 anmeldelser</p>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/200" alt="bilde av produktet">
+                <h4>Produktnavn</h4>
+                <p>499 kr</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>50 anmeldelser</p>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/200" alt="bilde av produktet">
+                <h4>Produktnavn</h4>
+                <p>499 kr</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>50 anmeldelser</p>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/200" alt="bilde av produktet">
+                <h4>Produktnavn</h4>
+                <p>499 kr</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>50 anmeldelser</p>
+            </article>
+        </aside>
+        </div>
     </main>
     <footer>
         <section id="logo-footer">
