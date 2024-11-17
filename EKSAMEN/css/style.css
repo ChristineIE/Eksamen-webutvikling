@@ -348,16 +348,58 @@ footer ul{
     grid-row: 1/4;
 }
 
-.add-to-chart-label{
-    display: flex;
-    flex-direction: column;
+#product-info{
+    padding: 5px;
 }
 
-#submit-btn-products{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+#product-info a{
+    text-transform: uppercase;
+    color: grey;
 }
+
+#product-color{
+    font-weight: bold;
+}
+
+#select-size{
+    border: 1px solid black;
+    background-color: rgb(188, 188, 188);
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+#submit-product-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+#submit-product-flex input{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    
+}
+
+#submit-product-flex i{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+#submit-ad-to-chart i{
+    background-color: white;
+    padding: 10px 15px;
+    border: 1px solid black;
+
+}
+
+
 @media only screen and (min-width: 600px) and (max-width: 900px){
 
     #categories-grid{

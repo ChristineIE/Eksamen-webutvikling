@@ -58,13 +58,15 @@
                 <img src="ressurser/produktbilde.jpg" alt="" id="pic-3">
                 <img src="ressurser/produktbilde.jpg" alt="" id="pic-4">
             </section>
-            <section>
-                <h4>Produktnavn</h4>
+            <section id="product-info">
+                <h3>Produktnavn</h3>
                 <a href="#">Merkenavn</a>
+                <p>5 195 kr inkl. mva.</p>
+                <p>Farge: <span id="product-color">beige</span></p>
                 <form id="add-products-form">
                     <label>
-                        <select name="size" required>
-                            <option value="#">Velg størrelse</option>
+                        <select name="size" id="select-size" required>
+                            <option value="">Velg størrelse</option>
                             <option value="xs">XS</option>
                             <option value="s">S</option>
                             <option value="m">M</option>
@@ -72,11 +74,8 @@
                             <option value="xl">XL</option>
                         </select>
                     </label>
-                    <label class="add-to-chart-label">
-                        <input type="text" placeholder="Legg i handlekurv">
-                    </label>
-                    <label class="add-to-chart-label">
-                        <input type="submit" value="">
+                    <label id="submit-product-flex">
+                        <input type="submit" value="Legg i handlekurv" id="add-to-chart-input">
                         <i class="fa-regular fa-heart"></i>
                     </label>
                 </form>
@@ -130,7 +129,6 @@
                 <p>50 anmeldelser</p>
             </article>
         </aside>
-        </div>
     </main>
     <footer>
         <section id="logo-footer">
