@@ -84,7 +84,7 @@ header nav ul li a{
 }
 
 #banner{
-    background-image: url('../ressurser/banner3-1280.jpg');
+    background-image: url('../ressurser/banner4.jpg');
     background-size: cover;
     background-position: center;
     height: auto;
@@ -97,7 +97,6 @@ header nav ul li a{
 
 #banner a{
     background-color: white;
-    border: 1px solid black;
     color: black;
     border-radius: 30px;
     padding: 0.8rem;
@@ -225,9 +224,15 @@ header nav ul li a{
 
 #scroll-container-reviews{
     background-color: rgb(249, 248, 245);
-    overflow: auto;
+    overflow: hidden;
     display: flex;
 }
+
+#scroll-container-reviews:hover{
+    overflow: auto;
+}
+
+
 .review-card{
     border: 1px solid rgb(194, 191, 191);
     border-radius: 30px;
@@ -417,9 +422,13 @@ footer ul{
 
 #scroll-similar-products{
     background-color: rgb(249, 248, 245);
-    overflow: auto;
+    overflow: hidden;
     display: flex;
 
+}
+
+#scroll-similar-products:hover{
+    overflow: auto;
 }
 
 /**kasse**/
