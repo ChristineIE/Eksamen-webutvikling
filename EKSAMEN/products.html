@@ -53,10 +53,10 @@
         </nav>
         <div id="flex-container-product">
             <section id="product-photos-grid">
-                <img src="ressurser/produktbilde.jpg" alt="" id="pic-1">
-                <img src="ressurser/produktbilde.jpg" alt="" id="pic-2">
-                <img src="ressurser/produktbilde.jpg" alt="" id="pic-3">
-                <img src="ressurser/produktbilde.jpg" alt="" id="pic-4">
+                <img src="ressurser/product-pic.jpg" alt="" id="pic-1">
+                <img src="ressurser/product-pic.jpg" alt="" id="pic-2">
+                <img src="ressurser/product-pic.jpg" alt="" id="pic-3">
+                <img src="ressurser/product-pic.jpg" alt="" id="pic-4">
             </section>
             <section id="product-info">
                 <h3>Produktnavn</h3>
@@ -65,7 +65,7 @@
                 <p>Farge: <span id="product-color">beige</span></p>
                 <form id="add-products-form">
                     <label>
-                        <select name="size" id="select-size" required>
+                        <select name="size" id="select-size-product" required>
                             <option value="">Velg størrelse</option>
                             <option value="xs">XS</option>
                             <option value="s">S</option>
@@ -213,9 +213,9 @@
                     </table>
                 </details>
                 <details>
-                    <summary>Anmeldelser <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-regular fa-star"></i></summary>
+                    <summary>Anmeldelser <span class="span-icon"><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></summary>
                     <ul id="details-ul">
                         <li>Jane Doe</li>
                         <li>23.11.2024</li>
@@ -233,7 +233,7 @@
         </div>
         <aside id="similar-products-aside">
             <h3>Lignende produkter</h3>
-            <a href="#" id="similar-products-link">Se flere lignende produkter</a>
+            <a href="#">Se flere lignende produkter</a>
             <i class="fa-solid fa-arrow-right"></i>
             <div id="flex-similar-products">
                 <div id="scroll-similar-products">

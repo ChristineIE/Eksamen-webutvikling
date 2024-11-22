@@ -225,7 +225,7 @@ header nav ul li a{
     border-radius: 30px;
 }
 
-.product-card span{
+.span-icon{
     font-weight: bold;
 }
 #popular-categories{
@@ -469,7 +469,7 @@ footer ul{
     margin-bottom: 10px;
 }
 
-#select-size{
+#select-size-product{
     border: 1px solid black;
     background-color: rgb(216, 213, 213);
     width: 100%;
@@ -531,6 +531,10 @@ details summary{
     padding: 10px;
 }
 
+#similar-products-aside{
+    margin: 5px;
+}
+
 #flex-similar-products{
     display: flex;
     flex-wrap: nowrap;
@@ -554,13 +558,58 @@ details summary{
 
 /**kasse**/
 
+
 .section-chart{
     padding: 10px;
     border: 1px solid rgb(184, 181, 181);
     margin: 10px;
 }
 
+.product-card-chart{
+    padding: 10px;
 
+}
+
+.product-card-chart h4{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-card-chart i{
+    padding: 10px 0;
+}
+#size-form-chart{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.selector-size-chart{
+    padding: 10px;
+    border: 1px solid rgb(191, 189, 189);
+    background-color: rgb(191, 189, 189);
+}
+
+.input-amount-dresses{
+    padding: 10px;
+    border: 1px solid rgb(191, 189, 189);
+}
+
+#personal-info-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.label-personal-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-personal-info{
+    padding: 10px;
+    border: 1px solid rgb(191, 189, 189);
+}
 @media only screen and (min-width: 600px) and (max-width: 900px){
 
     #categories-grid{
@@ -762,7 +811,7 @@ header nav ul{
     width: 100%;
     max-width: 400px;
 }
-#select-size:hover{
+#select-size-product:hover{
     border: 2px solid black;
 }
 
