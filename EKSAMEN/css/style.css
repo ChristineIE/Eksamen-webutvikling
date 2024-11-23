@@ -570,7 +570,7 @@ details summary{
 
 }
 
-.product-card-chart h4{
+.product-card-chart h4, #delivery-chart h4, #payment-chart h4{
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -601,14 +601,36 @@ details summary{
     flex-direction: column;
 }
 
-.label-personal-info{
+#cancel-personal-info{
+    display: block;
+    text-align: center;
+}
+
+.label-personal-info, .label-payment{
     display: flex;
     flex-direction: column;
 }
 
-.input-personal-info{
+.input-personal-info, .input-payment{
     padding: 10px;
     border: 1px solid rgb(191, 189, 189);
+}
+
+#label-email-chart{
+    margin-top: 30px;
+}
+
+.black-btn-chart{
+    text-align: center;
+}
+
+#save-btn-chart, #complete-btn-chart{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    width: 100%;
+    margin: 30px 0;
 }
 @media only screen and (min-width: 600px) and (max-width: 900px){
 
