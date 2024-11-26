@@ -948,11 +948,11 @@ header nav ul{
 
 .delivery-list{
     display: grid;
-    grid-template-columns: repeat(4,auto);
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
 .grid-element-1{
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 1/2;
 }
 
@@ -964,6 +964,7 @@ header nav ul{
 .grid-element-3{
     grid-column: 4/5;
     grid-row: 1/2;
+    text-align: end;
 }
 
 .grid-element-4{
