@@ -201,7 +201,7 @@
                     <li class="grid-element-1">
                         <label class="delivery-label">
                             <input type="radio" name="delivery-type" required>
-                            Ekspress hjemlevering</label>
+                            Ekspress pakke til utleveringssted</label>
                     </li>
                     <li class="days-to-delivery">1&ndash;3 virkedager</li>
                     <li class="grid-element-3">59 kr <i class="fa-solid fa-truck-fast"></i></li>
@@ -210,7 +210,7 @@
                     <li class="grid-element-1">
                         <label class="delivery-label">
                             <input type="radio" name="delivery-type" required>
-                            Ekspress hjemlevering</label>
+                            Standard hjemlevering</label>
                     </li>
                     <li class="days-to-delivery">5&ndash;8 virkedager</li>
                     <li class="grid-element-3">Gratis <i class="fa-solid fa-gift"></i></li>
@@ -223,16 +223,16 @@
         <section id="payment-chart" class="section-chart">
             <h2>4. Betaling</h2>
             <h4>Betal med kort <i class="fa-solid fa-credit-card"></i></h4>
-            <form>
-                <label class="label-payment">
+            <form id="payment-form">
+                <label class="label-payment" class="label-adjusted-size">
                     Kortnummer
                     <input type="number" placeholder="12345678****5678" required class="input-payment">
                 </label>
-                <label class="label-payment">
+                <label class="label-payment label-personal-info">
                     Utløpsdato
                     <input type="date" min="2024-11-23" required class="input-payment">
                 </label>
-                <label class="label-payment">
+                <label class="label-payment label-personal-info">
                     CVC-kode
                     <input type="text" placeholder="CVC/CVV" required class="input-payment">
                 </label>
