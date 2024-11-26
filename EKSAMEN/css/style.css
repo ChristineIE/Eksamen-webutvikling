@@ -570,7 +570,17 @@ details summary{
 
 }
 
-.product-card-chart h4, #delivery-chart h4, #payment-chart h4{
+.product-list-chart{
+    list-style: none;
+    padding: 0;
+}
+
+
+.product-list-chart li{
+    margin: 10px;
+}
+
+.product-name-element{
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -599,6 +609,7 @@ details summary{
 #personal-info-form{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 #cancel-personal-info{
@@ -611,6 +622,7 @@ details summary{
     flex-direction: column;
 }
 
+
 .input-personal-info, .input-payment{
     padding: 10px;
     border: 1px solid rgb(191, 189, 189);
@@ -622,6 +634,7 @@ details summary{
 
 .black-btn-chart{
     text-align: center;
+    width: 100%;
 }
 
 #save-btn-chart, #complete-btn-chart{
@@ -630,7 +643,40 @@ details summary{
     background-color: black;
     border: none;
     width: 100%;
-    margin: 30px 0;
+    margin: 20px 0;
+}
+
+.delivery-list{
+    list-style: none;
+    border: 1px solid rgb(191, 189, 189);
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+
+.delivery-list li{
+    padding: 10px;
+}
+
+.days-to-delivery{
+    color: grey;
+}
+
+#payment-chart p{
+    text-align: center;
+}
+
+#payment-chart span{
+    font-weight: bold;
+    font-size: 1.6rem;
+    display: block;
+}
+
+.checkbox-chart{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
 }
 @media only screen and (min-width: 600px) and (max-width: 900px){
 
@@ -837,5 +883,91 @@ header nav ul{
     border: 2px solid black;
 }
 
+/**chart**/
 
+.section-chart h2{
+    text-align: start;
+    width: 70%;
+}
+#product-chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card-chart{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+
+.product-list-chart{
+    list-style: none;
+}
+
+.icon-product-chart{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#personal-info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-personal-info{
+    width: 100%;
+    max-width: 49%;
+}
+
+#personal-info-form{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.label-adjusted-size{
+    max-width: 100%;
+}
+
+
+#delivery-chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#delivery-chart form{
+    width: 70%;
+}
+
+.delivery-list{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+}
+.grid-element-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.days-to-delivery{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.grid-element-3{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.grid-element-4{
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
 }
