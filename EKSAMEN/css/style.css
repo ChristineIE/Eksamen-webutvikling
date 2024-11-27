@@ -83,10 +83,6 @@ header nav ul li a{
     transition-duration: 1s;
 }
 
-#banner-container{
-    margin: 10px;
-}
-
 #banner-container h2, #banner-container p{
     width: 45%;
 }
@@ -180,12 +176,18 @@ header nav ul li a{
 }
 
 #popular-products-flex{
+    list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
-    margin: 10px 0;
+    padding: 10px;
 }
 
+.flex-list-buttons{
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 .popular-products-btn{
     padding: 10px;
@@ -664,7 +666,7 @@ details summary{
     border: 1px solid rgb(191, 189, 189);
 }
 
-#label-email-chart{
+.label-email-chart{
     margin-top: 30px;
 }
 
@@ -900,7 +902,7 @@ header nav ul{
 #product-photos-grid{
     width: 100%;
     max-width: 750px;
-    align-self: start;
+    position: sticky;
 
 }
 
@@ -952,23 +954,56 @@ header nav ul{
     align-items: center;
 }
 
-.label-personal-info{
-    width: 100%;
-    max-width: 49%;
-}
 
 #personal-info-form{
     width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(8, auto);
+    gap: 1rem;
 }
 
-
-.label-adjusted-size{
-    max-width: 100%;
+#grid-1-personal-info{
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
+#grid-2-personal-info{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#grid-3-personal-info{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#grid-4-personal-info{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#grid-5-personal-info{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#grid-6-personal-info{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#grid-7-personal-info{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+#grid-8-personal-info{
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+#grid-9-personal-info{
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
+#grid-10-personal-info{
+    grid-column: 1/3;
+    grid-row: 8/9;
+}
+
 
 
 #delivery-chart{
@@ -1007,4 +1042,56 @@ header nav ul{
 }
 
 
+#payment-chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#payment-form{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(7, auto);
+    width: 70%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#grid-1-payment-chart{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#grid-2-payment-chart{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#grid-3-payment-chart{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+}
+#grid-4-payment-chart{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#grid-5-payment-chart{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+#grid-6-payment-chart{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    
+}
+
+#grid-7-payment-chart{
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+#grid-8-payment-chart{
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
 }

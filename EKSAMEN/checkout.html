@@ -58,7 +58,7 @@
                     <li>
                         <form id="size-form-chart">
                             Størrelse:
-                            <select name="size" id="select-size" required class="selector-size-chart">
+                            <select name="size" class="select-size" required class="selector-size-chart">
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m">M</option>
@@ -86,7 +86,7 @@
                     <li>
                         <form id="size-form-chart">
                             Størrelse:
-                            <select name="size" id="select-size" required class="selector-size-chart">
+                            <select name="size" class="select-size" required class="selector-size-chart">
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m">M</option>
@@ -114,7 +114,7 @@
                     <li>
                         <form id="size-form-chart">
                             Størrelse:
-                            <select name="size" id="select-size" required class="selector-size-chart">
+                            <select name="size" required class="selector-size-chart">
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m">M</option>
@@ -137,41 +137,41 @@
         <section class="section-chart" id="personal-info-section">
             <h2>2. Dine opplysninger</h2>
             <form id="personal-info-form">
-                <label class="label-personal-info">
-                    Leveringsadresse
+                <p id="grid-1-personal-info">Leveringsadresse</p>
+                <label class="label-personal-info" id="grid-2-personal-info">
                     Fornavn
                     <input type="text" placeholder="Kari*" required class="input-personal-info">
                 </label>
-                <label class="label-personal-info">
+                <label class="label-personal-info" id="grid-3-personal-info">
                     Etternavn
                     <input type="text" placeholder="Nordmann*" required class="input-personal-info">
                 </label>
-                <label class="label-personal-info label-adjusted-size">
+                <label class="label-personal-info label-adjusted-size" id="grid-4-personal-info">
                     Gateadresse
                     <input type="text" placeholder="Nordbergsvingen 14D*" required class="input-personal-info">
                 </label>
-                <label class="label-personal-info">
+                <label class="label-personal-info" id="grid-5-personal-info">
                     Postnummer
                     <input type="number" placeholder=1738* minlength="4" maxlength="4" min="0000" max="9999" required
                         class="input-personal-info">
                 </label>
-                <label class="label-personal-info">
+                <label class="label-personal-info" id="grid-6-personal-info">
                     Poststed
                     <input type="text" placeholder="Borgenhaugen*" required class="input-personal-info">
                 </label>
-
-                <label class="label-adjusted-size label-personal-info" id="label-email-chart">
-                    Kontaktinformasjon
+                <p id="grid-7-personal-info">Kontaktinformasjon</p>
+                <label class="label-adjusted-size label-personal-info" class="label-email-chart"
+                    id="grid-8-personal-info">
                     E-post
                     <input type="email" name="email" placeholder="Karinordmann@hiof.no*"
                         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required class="input-personal-info">
                 </label>
-                <label class="label-adjusted-size label-personal-info">
+                <label class="label-adjusted-size label-personal-info" id="grid-9-personal-info">
                     Telefon
                     <input type="tel" name="phone" placeholder="+4794**9494" pattern="[0-9]{8,12}" required
                         class="input-personal-info">
                 </label>
-                <label class="black-btn-chart">
+                <label class="black-btn-chart" id="grid-10-personal-info">
                     <input type="submit" value="Lagre" id="save-btn-chart">
                 </label>
 
@@ -224,30 +224,31 @@
             <h2>4. Betaling</h2>
             <h4>Betal med kort <i class="fa-solid fa-credit-card"></i></h4>
             <form id="payment-form">
-                <label class="label-payment" class="label-adjusted-size">
+                <label class="label-payment" class="label-adjusted-size" id="grid-1-payment-chart">
                     Kortnummer
                     <input type="number" placeholder="12345678****5678" required class="input-payment">
                 </label>
-                <label class="label-payment label-personal-info">
+                <label class="label-payment" class="label-personal-info" id="grid-2-payment-chart">
                     Utløpsdato
                     <input type="date" min="2024-11-23" required class="input-payment">
                 </label>
-                <label class="label-payment label-personal-info">
+                <label class="label-payment label-personal-info" id="grid-3-payment-chart">
                     CVC-kode
                     <input type="text" placeholder="CVC/CVV" required class="input-payment">
                 </label>
-                <p>Å betale inkludert mva.<span>1 199 kr</span> </p>
-                <label class="black-btn-chart">
+                <p id="grid-4-payment-chart">Å betale inkludert mva.<span>1 199 kr</span> </p>
+                <label class="black-btn-chart" id="grid-5-payment-chart">
                     <input type="submit" value="Fullfør kjøp" id="complete-btn-chart">
                 </label>
-                <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
+                <p id="grid-6-payment-chart">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er
+                    korrekte og fullstendige.
                     Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger
                     uriktige eller ufullstendige opplysninger.</p>
-                <label class="checkbox-chart">
+                <label class="checkbox-chart" id="grid-7-payment-chart">
                     <input type="checkbox" name="newsletter">
                     Ja, takk. Send nyhetsbrev til meg.
                 </label>
-                <label class="checkbox-chart">
+                <label class="checkbox-chart" id="grid-8-payment-chart">
                     <input type="checkbox" name="sms">
                     Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                 </label>
