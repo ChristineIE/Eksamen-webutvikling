@@ -8,7 +8,8 @@
     <link href="./ikoner/css/brands.css" rel="stylesheet" />
     <link href="./ikoner/css/solid.css" rel="stylesheet" />
     <link href="./ikoner/css/regular.css" rel="stylesheet" />
-    <title>Produkter</title>
+    <title>Eksamen | Produkter</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -29,17 +30,17 @@
             <nav>
                 <ul>
                     <li class="nav-list-header"><a href="index.html">Hjem</a></li>
-                    <li class="nav-list-header"><a href="#">Produkter</a></li>
+                    <li class="nav-list-header"><a href="index.html#popular-products">Produkter</a></li>
                     <li class="main-logo"><a href="index.html">LOGO</a></li>
-                    <li class="nav-list-header"><a href="#">Kategorier</a></li>
-                    <li class="nav-list-header"><a href="#">Kontakt oss</a></li>
+                    <li class="nav-list-header"><a href="index.html#popular-categories">Kategorier</a></li>
+                    <li class="nav-list-header"><a href="#contact-footer">Kontakt oss</a></li>
                 </ul>
             </nav>
         </section>
         <section id="icons-header">
             <a href="index.html"><i class="fa-regular fa-user"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="products.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </section>
 
     </header>
@@ -53,10 +54,10 @@
         </nav>
         <div id="flex-container-product">
             <section id="product-photos-grid">
-                <img src="ressurser/product-pic.jpg" alt="" id="pic-1">
-                <img src="ressurser/product-pic.jpg" alt="" id="pic-2">
-                <img src="ressurser/product-pic.jpg" alt="" id="pic-3">
-                <img src="ressurser/product-pic.jpg" alt="" id="pic-4">
+                <img src="ressurser/product.jpg" alt="dame med hvit blomsterkjole" id="pic-1">
+                <img src="ressurser/product.jpg" alt="dame med hvit blomsterkjole" id="pic-2">
+                <img src="ressurser/product.jpg" alt="dame med hvit blomsterkjole" id="pic-3">
+                <img src="ressurser/product.jpg" alt="dame med hvit blomsterkjole" id="pic-4">
             </section>
             <section id="product-info">
                 <h3>Produktnavn</h3>
@@ -233,75 +234,92 @@
         </div>
         <aside id="similar-products-aside">
             <h3>Lignende produkter</h3>
-            <a href="#">Se flere lignende produkter</a>
-            <i class="fa-solid fa-arrow-right"></i>
+            <a href="#">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
             <div id="flex-similar-products">
                 <div id="scroll-similar-products">
-                    <article class="similar-product-card">
-                        <img src="https://picsum.photos/200" alt="bilde av produktet">
-                        <h4>Produktnavn</h4>
-                        <p>499 kr</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>50 anmeldelser</p>
+                    <article class="similar-product-card similar-products-grid">
+                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
+                        <span class="heart-icon-similar"><i class="fa-regular fa-heart heart-icon"></i></span>
+                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <p class="similar-grid-3">499 kr</p>
+                        <span class="similar-grid-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card">
-                        <img src="https://picsum.photos/200" alt="bilde av produktet">
-                        <h4>Produktnavn</h4>
-                        <p>499 kr</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>50 anmeldelser</p>
+                    <article class="similar-product-card similar-products-grid">
+                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
+                        <span class="heart-icon-similar"><i class="fa-regular fa-heart heart-icon"></i></span>
+                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <p class="similar-grid-3">499 kr</p>
+                        <span class="similar-grid-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card">
-                        <img src="https://picsum.photos/200" alt="bilde av produktet">
-                        <h4>Produktnavn</h4>
-                        <p>499 kr</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>50 anmeldelser</p>
+                    <article class="similar-product-card similar-products-grid">
+                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
+                        <span class="heart-icon-similar"><i class="fa-regular fa-heart heart-icon"></i></span>
+                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <p class="similar-grid-3">499 kr</p>
+                        <span class="similar-grid-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card">
-                        <img src="https://picsum.photos/200" alt="bilde av produktet">
-                        <h4>Produktnavn</h4>
-                        <p>499 kr</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>50 anmeldelser</p>
+                    <article class="similar-product-card similar-products-grid">
+                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
+                        <span class="heart-icon-similar"><i class="fa-regular fa-heart heart-icon"></i></span>
+                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <p class="similar-grid-3">499 kr</p>
+                        <span class="similar-grid-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card">
-                        <img src="https://picsum.photos/200" alt="bilde av produktet">
-                        <h4>Produktnavn</h4>
-                        <p>499 kr</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>50 anmeldelser</p>
+                    <article class="similar-product-card similar-products-grid">
+                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
+                        <span class="heart-icon-similar"><i class="fa-regular fa-heart heart-icon"></i></span>
+                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <p class="similar-grid-3">499 kr</p>
+                        <span class="similar-grid-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card">
-                        <img src="https://picsum.photos/200" alt="bilde av produktet">
-                        <h4>Produktnavn</h4>
-                        <p>499 kr</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <p>50 anmeldelser</p>
+                    <article class="similar-product-card similar-products-grid">
+                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
+                        <span class="heart-icon-similar"><i class="fa-regular fa-heart heart-icon"></i></span>
+                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <p class="similar-grid-3">499 kr</p>
+                        <span class="similar-grid-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
                 </div>
             </div>
