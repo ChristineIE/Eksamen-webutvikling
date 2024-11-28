@@ -222,6 +222,7 @@ header nav ul li a{
     margin: 25px 0;
     text-align: start;
     position: relative;
+    max-width: 320px;
 }
 
 .heart-icon-img{
@@ -232,7 +233,7 @@ header nav ul li a{
     background-color: rgba(203, 202, 197, 0.756);
     color: white;
     padding: 0.7rem 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .heart-icon-img:hover{
@@ -250,7 +251,7 @@ header nav ul li a{
     grid-column: 1/4;
     grid-row: 1/2;
     border-radius: 30px;
-    max-width: 350px;
+    max-width: 320px;
 
 }
 
@@ -283,6 +284,8 @@ header nav ul li a{
     font-size: 1rem;
     grid-column: 1/2;
     grid-row: 3/4;
+    font-size: 0.8rem;
+    align-self: center;
 }
 
 #popular-categories{
@@ -639,16 +642,6 @@ details summary{
     position: relative;
 }
 
-.heart-icon-similar{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border-radius: 30px;
-    background-color: rgba(203, 202, 197, 0.756);
-    color: white;
-    padding: 0.5rem 0.6rem;
-    font-size: 1rem;
-}
 
 .heart-icon-similar:hover{
     background-color: #eea1a1cd;
@@ -699,6 +692,10 @@ details summary{
 /**kasse**/
 
 
+.h2-chart{
+    text-align: center;
+}
+
 .section-chart{
     padding: 10px;
     border: 1px solid rgb(184, 181, 181);
@@ -708,6 +705,11 @@ details summary{
 .product-card-chart{
     padding: 10px;
 
+}
+
+.product-card-chart img{
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .product-list-chart{
@@ -934,6 +936,9 @@ header nav ul{
     overflow: auto;
 }
 
+.product-card{
+    max-width: 385px;
+}
 
 #productcard-flex-container{
     width: 100%;
@@ -1106,6 +1111,7 @@ header nav ul{
 #grid-8-personal-info{
     grid-column: 1/3;
     grid-row: 6/7;
+    margin: 0;
 }
 #grid-9-personal-info{
     grid-column: 1/3;
