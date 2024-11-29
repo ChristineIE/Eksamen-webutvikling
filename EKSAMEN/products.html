@@ -47,8 +47,10 @@
     <main>
         <nav>
             <ul id=product-nav-flex>
-                <li><a href="#">Hjem ></a></li>
-                <li><a href="#">Kategori ></a></li>
+                <li><a href="#">Hjem</a></li>
+                <li><i class="fa-solid fa-greater-than"></i></li>
+                <li><a href="#">Kategori</a></li>
+                <li><i class="fa-solid fa-greater-than"></i></li>
                 <li>Produktnavn</li>
             </ul>
         </nav>
@@ -216,12 +218,12 @@
                 <details>
                     <summary>Anmeldelser <span class="span-icon"><i class="fa-solid fa-star"></i><i
                                 class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></summary>
+                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>32</span></summary>
                     <ul id="details-ul">
                         <li>Jane Doe</li>
                         <li>23.11.2024</li>
                         <li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
                                 class="fa-regular fa-star"></i></li>
                         <li>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -234,27 +236,13 @@
         </div>
         <aside id="similar-products-aside">
             <h3>Lignende produkter</h3>
-            <a href="#">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" id="link-aside">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
             <div id="flex-similar-products">
                 <div id="scroll-similar-products">
-                    <article class="similar-product-card similar-products-grid">
+                    <article class="similar-products-grid">
                         <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
                         <span class="heart-icon-img"><i class="fa-regular fa-heart heart-icon"></i></span>
-                        <h4 class="similar-grid-2">Produktnavn</h4>
-                        <p class="similar-grid-3">499 kr</p>
-                        <span class="similar-grid-4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </span>
-                        <p class="similar-grid-5">50 anmeldelser</p>
-                    </article>
-                    <article class="similar-product-card similar-products-grid">
-                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
-                        <span class="heart-icon-img"><i class="fa-regular fa-heart heart-icon"></i></span>
-                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <a href="products.html" class="similar-grid-2">Produktnavn</a>
                         <p class="similar-grid-3">499 kr</p>
                         <span class="similar-grid-4">
                             <i class="fa-solid fa-star"></i>
@@ -265,10 +253,10 @@
                         </span>
                         <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card similar-products-grid">
+                    <article class="similar-products-grid">
                         <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
                         <span class="heart-icon-img"><i class="fa-regular fa-heart heart-icon"></i></span>
-                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <a href="products.html" class="similar-grid-2">Produktnavn</a>
                         <p class="similar-grid-3">499 kr</p>
                         <span class="similar-grid-4">
                             <i class="fa-solid fa-star"></i>
@@ -279,10 +267,10 @@
                         </span>
                         <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card similar-products-grid">
+                    <article class="similar-products-grid">
                         <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
                         <span class="heart-icon-img"><i class="fa-regular fa-heart heart-icon"></i></span>
-                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <a href="products.html" class="similar-grid-2">Produktnavn</a>
                         <p class="similar-grid-3">499 kr</p>
                         <span class="similar-grid-4">
                             <i class="fa-solid fa-star"></i>
@@ -293,10 +281,10 @@
                         </span>
                         <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card similar-products-grid">
+                    <article class="similar-products-grid">
                         <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
                         <span class="heart-icon-img"><i class="fa-regular fa-heart heart-icon"></i></span>
-                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <a href="products.html" class="similar-grid-2">Produktnavn</a>
                         <p class="similar-grid-3">499 kr</p>
                         <span class="similar-grid-4">
                             <i class="fa-solid fa-star"></i>
@@ -307,10 +295,24 @@
                         </span>
                         <p class="similar-grid-5">50 anmeldelser</p>
                     </article>
-                    <article class="similar-product-card similar-products-grid">
+                    <article class="similar-products-grid">
                         <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
                         <span class="heart-icon-img"><i class="fa-regular fa-heart heart-icon"></i></span>
-                        <h4 class="similar-grid-2">Produktnavn</h4>
+                        <a href="products.html" class="similar-grid-2">Produktnavn</a>
+                        <p class="similar-grid-3">499 kr</p>
+                        <span class="similar-grid-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p class="similar-grid-5">50 anmeldelser</p>
+                    </article>
+                    <article class="similar-products-grid">
+                        <img src="https://picsum.photos/200" alt="bilde av produktet" class="similar-grid-1">
+                        <span class="heart-icon-img"><i class="fa-regular fa-heart heart-icon"></i></span>
+                        <a href="products.html" class="similar-grid-2">Produktnavn</a>
                         <p class="similar-grid-3">499 kr</p>
                         <span class="similar-grid-4">
                             <i class="fa-solid fa-star"></i>
